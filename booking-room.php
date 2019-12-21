@@ -18,6 +18,9 @@ $sql = "INSERT INTO room_booking (room_num,room_date_booking,cus_name,cus_email,
 $result = mysqli_query($conn,$sql);
 
 if (mysqli_affected_rows($conn)>0) {
+    echo '<script type="text/javascript">
+            swal("Congrats!", ", Your account is created!", "success");
+  					</script>';
     header("Location: chk.php");
 } else {
     header('Content-Type: application/json');
@@ -25,8 +28,3 @@ if (mysqli_affected_rows($conn)>0) {
     echo json_encode(array('status' => 'danger','message' => $errors));
 }
 ?>
-<script type="text/javascript">
-        function JSalert(){
-            swal("Congrats!", ", Your account is created!", "success");
-        }
-</script>

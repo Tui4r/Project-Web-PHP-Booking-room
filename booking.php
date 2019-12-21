@@ -27,6 +27,7 @@ include 'auth.php';
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
     <script>
         $(document).ready(function () {
@@ -92,27 +93,6 @@ include 'auth.php';
             }
         }
     </script>
- <!--   <script language="javascript">
-        function checkvalidate()
-        {
-            if (document.form1.name.value == ""){
-                alert('Please in put your name');
-                document.form1.name.focus();
-                return false;
-            }
-            if (document.form1.email.value == ''){
-                alert('Please in put your E-mail.')
-                document.form1.email.focus();
-                return false;
-            }
-            if (document.form1.tel.value == ""){
-                alert('Please in put your Phone number.');
-                document.form1.tel.focus();
-                return false;
-            }
-            document.form1.submit();
-        }
-    </script> -->
 
 
 </div>
